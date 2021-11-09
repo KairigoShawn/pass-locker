@@ -82,3 +82,12 @@ class Credential:
 
 
 
+	@classmethod
+	def find_by_site_name(cls, site_name):
+		'''
+		finds the system name
+		'''
+		for credential in cls.credentials_list:
+			if credential.site_name == site_name:
+				return credential
+
