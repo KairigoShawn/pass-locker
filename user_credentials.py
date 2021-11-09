@@ -26,3 +26,11 @@ class User:
 		'''
 		User.users_list.append(self)
 
+class Credential:
+	'''
+	account to save passwords info and new info
+	'''
+	# Class Variables
+	credentials_list =[]
+	user_credentials_list = []
+	@classmethod
